@@ -1,0 +1,24 @@
+{
+  "model_type": "XGBoost / Gradient Boosting Classifier",
+  "trained_at_records": 2000,
+  "features": [
+    "estimated_patients",
+    "provider_count",
+    "patients_per_provider",
+    "total_beneficiaries",
+    "total_services"
+  ],
+  "accuracy_pct": 88.5,
+  "precision_pct": 91.73,
+  "recall_pct": 90.31,
+  "f1_score_pct": 91.02,
+  "roc_auc_score": 0.963,
+  "total_clusters": 4,
+  "anomalies_detected": 160,
+  "models": {
+    "gap_classifier": "xgboost_gap_classifier.pkl",
+    "kmeans": "kmeans_cluster_model.pkl",
+    "isolation_forest": "isolation_forest_anomaly.pkl",
+    "scaler": "scaler.pkl"
+  }
+}
